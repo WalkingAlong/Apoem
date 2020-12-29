@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 用户 openid -->
+  <!-- <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+      size="default"
+    ></button>
+    <view class="userinfo-nickname-wrapper">
+      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+    </view>
+  </view> -->
+
+
+  <view class="content" wx:if="{{content}}">{{content}}</view>
+  <view class="trans" wx:if="{{trans}}">解释：{{trans}}</view>
+  <view class="update" bindtap="update">换一换</view>
+  <view class="description">根据时间、地点、天气、事件智能推荐</view>
+  <!-- <image class="video" src="../../images/mm1.PNG"></image> -->
+</view>
